@@ -1,0 +1,18 @@
+<div style="margin:auto; width: 70%; margin-top: 30px;">
+    <app-search-bar (onSelectedOption)="onSelectedOption($event)"></app-search-bar>
+</div>
+<h2 style="text-align:center">Films</h2>
+<div *ngFor="let film of filmData" class="group">
+    <p> <img src="{{film.Poster}}"> </p>
+    <p><b>Title :</b> {{film.Title}}</p>
+    <p><b>Year :</b> {{film.Year}}</p>
+    <p><b>Type :</b> {{film.Type}}</p>
+</div>
+
+
+<!-- <div *ngFor="let film of filmData">
+    <img src="{{film.Poster}}" alt="">
+    <span>{{film.Title}}</span>
+    <span>{{film.Year}}</span>
+    <span>{{film.Type}}</span>
+</div> -->
